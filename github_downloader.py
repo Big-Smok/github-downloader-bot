@@ -1,4 +1,4 @@
-import requests,bs4,telebot
+import requests,telebot
 send_down="bot.send_message(message.chat.id,'Wait please🔄')"
 bot=telebot.TeleBot("1936478490:AAGKmaiRsNO-n8u5IgSHFeaReOmy09akMA8")
 @bot.message_handler(commands=["start"])
