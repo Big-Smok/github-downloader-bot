@@ -1,6 +1,6 @@
 import requests,telebot
+bot=telebot.TeleBot("#token")
 send_down="bot.send_message(message.chat.id,'Wait please🔄')"
-bot=telebot.TeleBot("1936478490:AAGKmaiRsNO-n8u5IgSHFeaReOmy09akMA8")
 @bot.message_handler(commands=["start"])
 def start(me):
     bot.send_message(me.chat.id,str("hello {} \n Welcome to github installer bot \nsend the repo url to send the files here").format(me.chat.first_name))
